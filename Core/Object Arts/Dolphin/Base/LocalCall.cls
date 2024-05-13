@@ -29,13 +29,13 @@ costPerMinute
 	costPerMinute := 0.10. 
 	callDay := super day.
 	startT  := super startTime.
-	costPerMinute := (startT between: 8 and: 20) "Horario de oficina (lunes a viernes)"
+	costPerMinute := (startT between: 8 and: 20) 
 	ifTrue: [
-	    (callDay between: 1 and: 5) "Lunes a viernes"
-		ifTrue: [costPerMinute := BUSINESS_COST] "Costo de negocio"
-		ifFalse: [costPerMinute := NORMAL_COST] "Costo normal"
+	    (callDay between: 1 and: 5)
+		ifTrue: [costPerMinute := BUSINESS_COST] 
+		ifFalse: [costPerMinute := NORMAL_COST] 
 	]
-	ifFalse: [costPerMinute:= WEEKEND_COST]. "Fin de semana"
+	ifFalse: [costPerMinute:= WEEKEND_COST]. 
 
 	^ (costPerMinute) asFloat.!
 
