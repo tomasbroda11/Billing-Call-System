@@ -10,6 +10,7 @@ Algunas observaciones a tener en cuenta:
 - Scripts hechos para probar factura de llamada individual con el formato : [tipo_llamada]_test
 - LOS DOS SCRIPTS LLAMADOS SCRIPT_TEST_COMPLETE Y TEST_WITH_METHOD SON LOS PRINCIPALES PARA VISUALIZAR FACTURA COMPLETA
 - Algunos datos fueron seteados como default (precios fijos de llamadas a destinos)
+- Dentro del directorio base estan definidas las clases con sus respectivos metodos
   
 
 
