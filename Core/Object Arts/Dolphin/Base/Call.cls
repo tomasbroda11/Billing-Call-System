@@ -22,12 +22,6 @@ day
 	"Returns the day of the call"
 	^day!
 
-dayName
-	"Returns the name of the day"
-	| dayNames |
-	dayNames := #('Monday' 'Tuesday' 'Wednesday' 'Thursday' 'Friday' 'Saturday' 'Sunday').
-		^ dayNames at: self day!
-
 duration 
 "Returns the duration of the call"
 	^duration!
